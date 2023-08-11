@@ -1,0 +1,160 @@
+.hero {
+    width: 100%;
+    height: 85vh;
+    background: rgba(108, 164, 255, 0.178);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden !important;
+    margin-bottom: 0% !important;
+}
+
+.text {
+    width: 35% !important;
+    margin-left: 5rem;
+    z-index: 5000;
+}
+
+.text h3 {
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: 22px !important;
+    margin-bottom: 1rem;
+}
+
+.text h1 {
+    font-size: 2.5rem !important;
+    font-weight: 500 !important;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0% !important;
+}
+
+.text h1 b {
+    font-size: 2.5rem !important;
+    color: var(--red-color);
+}
+
+.text h1 span {
+    font-size: 2.5rem !important;
+}
+
+.text p {
+    margin-top: 10px;
+    height: max-content;
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+    z-index: 5000;
+}
+
+.img img {
+    float: right;
+    position: static;
+    width: 95%;
+    height: 100%;
+}
+
+.e1 {
+    position: absolute;
+}
+
+.e1:nth-child(1) {
+    top: 0%;
+    left: 0%;
+    width: 12%;
+}
+
+.e1:nth-child(2) {
+    bottom: -4%;
+    left: 7%;
+    width: 18%;
+}
+
+.e1:nth-child(3) {
+    top: 10%;
+    left: 17%;
+    width: 3%;
+}
+
+.e1:nth-child(4) {
+    bottom: 16%;
+    left: 23%;
+    width: 5%;
+}
+
+.e1:nth-child(5) {
+    bottom: 0%;
+    left: 45%;
+    width: 100%;
+}
+
+
+.e1:nth-child(6) {
+    bottom: 0%;
+    left: 46%;
+    width: 100%;
+}
+
+
+.e1:nth-child(7) {
+    bottom: -1%;
+    left: 49%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+    .hero {
+        height: 70vh;
+    }
+}
+
+
+@media screen and (max-width: 778px) {
+    .e1:nth-child(1) {
+        display: none;
+    }
+    .hero {
+        height: 55vh;
+    }
+
+    .text {
+        margin-left: 2rem;
+        width: 50% !important;
+    }
+
+    .text p {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .e1 {
+        display: none;
+    }
+    .hero {
+        height: max-content;
+        flex-direction: column-reverse;
+        padding: 0rem 0 2rem;
+    }
+
+    .text {
+        width: 85% !important;
+    }
+
+    .img {
+        width: 100%;
+        height: 280px !important;
+        margin-top: 0rem !important;
+    }
+
+    .img img {
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,32 @@
+.goals_style {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.goals_style img {
+    width: 55px;
+    height: 55px;
+}
+
+.goals_style h4 {
+    text-transform: capitalize;
+    margin: 1rem 0 5%;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.goals_style h4 span {
+    font-size: 1.4rem !important; 
+    color: var(--red-color)
+}
+
+
+@media screen and (max-width: 1025px) {
+    .goals_style {
+        margin-top: 2rem;
+        margin-bottom: 0% !important;
+    }
+ }

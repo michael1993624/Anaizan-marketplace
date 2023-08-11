@@ -1,0 +1,80 @@
+@import "../../global/mixins.scss";
+
+.content_msg {
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    padding: 5px 0 5px;
+    margin-top: 1rem !important;
+}
+.content_msg h4 {
+    font-size: 1.6rem !important;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#block_msg {
+    margin: 3% auto;
+    width: 580px !important;
+    border-radius: 3px;
+
+    @include tablet {
+        width: 90% !important;
+    }
+}
+
+#block_msg p:nth-child(2) {
+    text-align: center;
+    margin: auto;
+    font-size: 15px !important;
+}
+
+#block_msg form{
+    width: 100%;
+    margin: 2rem auto;
+}
+
+#block_msg form textarea {
+    width: 100%;
+    margin-bottom: 2% !important;
+    resize: none;
+    padding: 1%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(140, 140, 140);
+    box-shadow: 0 0 4px rgb(205, 205, 205);
+    &:focus {
+        box-shadow: 0 0 8px rgb(140, 140, 140);
+    }
+}
+
+#block_msg form button:hover {
+    background: #0084ff81;
+}
+
+#block_msg .form label,
+#block_msg .form p {
+    font-size: 15px !important;
+}
+
+#block_msg .form button {
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    padding: 0% !important;
+    background: rgb(2, 60, 235);
+    color: white;
+    border-radius: 3px;
+    margin-top: 0% !important;
+}
+
+.div2_form,
+.check {
+    display: none !important;
+}
+
+
+
+@media screen and (max-width: 620px) {
+  
+}

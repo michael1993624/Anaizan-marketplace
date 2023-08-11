@@ -1,0 +1,43 @@
+.AddCard {
+    width: 100%;
+ color: var(--text-color);
+}
+
+.AddCard:nth-child(2) div,
+.AddCard:nth-child(3) div {
+    background: rgb(242, 242, 255);
+}
+
+.AddCard h2 {
+  position: relative;
+  margin-bottom: 1rem;
+  margin-left: 0%;
+ margin-top: 0%;
+}
+
+.AddCard span {
+    color: var(--red-color);
+  }
+
+.AddCard h2::before {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: var(--orange-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+.AddCard div {
+  padding: 1.5rem;
+  background: var(--white-color);
+  font-size: 0.9rem;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 800px) {
+    .AddCard h2 {
+        margin: 0%;
+    }
+}

@@ -1,0 +1,63 @@
+@import "../../../global/mixins.scss";
+
+.top-product-section {
+    width: 100%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-bottom: 0% !important;
+
+    .prod-card-top {
+        border-radius: 3px;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 5%;
+        padding-bottom: 2rem;
+
+
+        div {
+            width: 90%;
+            height: 78%;
+            background-color: #EDF2FD;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8% 0 0.8%;
+            border-radius: 3px;
+            margin-bottom: 0% !important;
+            margin: auto;
+
+            img {
+                width: 70%;
+                height: 60%;
+                transition: 0.7s;
+
+                &:hover {
+                    transform: scale(1.05)
+                }
+            }
+        }
+
+        h3 {
+            width: 90%;
+            margin: 22px auto;
+            font-size: 16px !important;
+            font-weight: lighter;
+            text-align: center;
+        }
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(3,1fr);
+
+        .prod-card-top {
+            height: 250px !important;
+        }
+    }
+
+    @include phone {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

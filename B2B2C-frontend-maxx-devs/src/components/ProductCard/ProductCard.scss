@@ -1,0 +1,19 @@
+.product-card-wrapper {
+  .product-card-body {
+    text-align: center;
+    .sale-price {
+      background: #ff3b3b;
+      padding: 4px;
+      border-radius: 7px;
+      color: white;
+      font-weight: bold;
+    }
+    .product-card-img {
+      img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+      }
+    }
+  }
+}

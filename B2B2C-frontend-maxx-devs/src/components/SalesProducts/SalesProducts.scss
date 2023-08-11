@@ -1,0 +1,28 @@
+.sales-products-wrapper {
+  padding: 20px 20px 14px 20px;
+  .sales-products-left {
+    background: #2c9ec2;
+    padding: 8px;
+    text-align: center;
+    height: 290px;
+    p {
+      color: white !important;
+    }
+  }
+  .sales-product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+      width: 180px;
+      height: 124px;
+      object-fit: cover;
+      padding: 5px;
+    }
+    center {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin: 5px 4px 5px 4px;
+    }
+  }
+}

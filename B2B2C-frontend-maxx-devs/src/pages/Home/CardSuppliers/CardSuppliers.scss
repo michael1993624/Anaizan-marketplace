@@ -1,0 +1,160 @@
+@import "../../../global/mixins.scss";
+
+.sectionb7 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  .sect7_head {
+    width: 99.5%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: none;
+    margin-bottom: 1rem;
+  }
+
+
+  .sect7_head button {
+    font-size: 17px;
+    font-weight: lighter;
+    margin-left: 0%;
+    padding: 1% 0 1%;
+    width: 150px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .sect7_head div:nth-child(3) {
+    width: 67%;
+    margin-left: 5%;
+    height: 2px;
+    border-radius: 30px;
+    background-color: var(--gray-100-color);
+  }
+
+  .sect7_div1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 0%;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .sect7_div1 .bb {
+    width: 100%;
+    border: 1px solid;
+    color: white;
+  }
+
+  .blocs {
+    width: 90%;
+  }
+
+  .bb div {
+    width: 100%;
+    height: 100%;
+    padding: 53% 0 8%;
+    background-color: rgba(0, 0, 0, 0.424);
+    position: relative;
+    transition: 0.7s;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.608);
+    }
+  }
+
+  .bb p {
+    font-size: 16px;
+    width: 80%;
+    margin: 10% auto;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+  }
+
+  .bb span {
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .bb span svg {
+    font-size: 15px;
+    margin-left: 2%;
+  }
+
+  .blocs .foots {
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: white;
+  }
+
+  .blocs .foots h3 {
+    width: 80%;
+    background-color: white;
+    padding: 1rem 0 0.5% 4%;
+    display: flex;
+    align-items: center;
+    font-size: 17px !important;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+  }
+
+  .foots h3 img {
+    width: 30px;
+    margin-right: 4%;
+  }
+
+  .foots p {
+    font-size: 14px;
+    margin-left: 3%;
+  }
+
+  .active {
+    background: #FF9900;
+    color: white;
+  }
+
+  .no-active {
+    background: white;
+    color: #FF9900;
+  }
+
+  @include tablet{
+      .sect7_head {
+
+        div {
+          display: none;
+        }
+      }
+
+      .sect7_div1 {
+        grid-template-columns: repeat(2, 1fr);
+
+        .blocs {
+          width: 95%;
+          margin-top: 2% !important;
+
+          div {
+
+            p {
+              width: 90%;
+              margin-left: 2% !important;
+              margin-top: 0% !important;
+            }
+          }
+        }
+      }
+    
+  }
+
+}

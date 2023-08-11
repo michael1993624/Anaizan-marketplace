@@ -1,0 +1,257 @@
+@import "../../global/mixins.scss";
+
+/* style pour le peid de page */
+.footer {
+  background-color: rgb(41, 40, 40);
+  display: block;
+  margin: 0 !important;
+
+  p {
+    font-size: 15px !important;
+    color: var(--gray-100-color);
+  }
+
+  .title-form {
+    font-size: 1.5rem !important;
+    font-weight: lighter;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    width: auto;
+    margin: auto !important;
+  }
+
+  .form_footer {
+    margin: 2rem auto;
+    width: 45%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+
+    input {
+      border: none;
+      padding: 0 10px 0 10px;
+      padding-left: 3%;
+      width: 83%;
+      height: 100%;
+      font-size: 15px;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      background: none;
+      color: white;
+    }
+
+    input:last-child {
+      width: auto;
+      padding: 0 1rem 0 1rem;
+      height: 100%;
+      background: var(--blue-color);
+      color: white;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+
+    input:last-child:hover {
+      background-color: rgb(113, 113, 255);
+    }
+  }
+
+  .sectionf1 {
+    text-align: center;
+    padding-top: 4rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .sectionf2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+    padding-top: 3rem;
+    padding-left: 2.5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.259);
+
+    ul {
+      width: auto !important;
+
+      h3 {
+        color: var(--gray-100-color);
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        margin-bottom: 4%;
+      }
+
+      li {
+        margin-bottom: 6px;
+        text-align: start;
+
+        &:hover a {
+          text-decoration: underline;
+        }
+
+        a {
+          color: rgb(216, 216, 216);
+          font-size: 15px !important;
+        }
+      }
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(1,1fr);
+      row-gap: 1.5rem;
+      padding-left: 0% !important;
+      padding-right: 0% !important;
+      padding-bottom: 2rem !important;
+
+      ul {
+        margin: auto;
+        padding-left: 0% !important;
+        text-align: center;
+
+        li {
+          text-align: center;
+        }
+      }
+    }
+
+    .active {
+      height: max-content !important;
+    }
+    .no-active  {
+      height: 30px !important;
+    }
+  }
+
+  .sectionf3 {
+    text-align: center;
+    padding: 1rem 4.5rem 2rem 4.5rem;
+
+    h3 {
+      font-size: 18px !important;
+      color: var(--gray-100-color) !important;
+      margin-bottom: 1rem;
+    }
+
+    .form_footer,
+    .title-form {
+      display: none;
+    }
+
+    .f1 {
+      width: auto;
+      color: var(--gray-100-color);
+      text-align: start;
+    }
+
+    .f1 li {
+      width: 100%;
+    }
+
+    .f1 li img {
+      width: 100px;
+      margin-left: 0% !important;
+      text-align: start;
+    }
+
+    .f3 {
+      text-align: start;
+      width: auto;
+      border: 1px solid;
+
+      li {
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          display: flex;
+          align-items: center;
+          margin: 0 5px;
+
+          &:nth-child(1) {
+            margin-left: 0% !important;
+          }
+
+          svg {
+            font-size: 1.8rem;
+          }
+
+          color: whitesmoke;
+        }
+      }
+    }
+
+    .f2 {
+      width: auto;
+      text-align: center;
+      color: var(--gray-100-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 14px !important;
+        margin: 0%;
+      }
+    }
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px !important;
+      padding-right: 10px;
+      .form_footer,
+      .title-form {
+        display: flex;
+      }
+
+      .form_footer {
+        width: 80%;
+        margin-bottom: 3rem !important;
+      }
+
+      .f1,
+      .f2,
+      .f3 {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .f1 {
+        margin-top: 0%;
+      }
+    }
+  }
+
+  .sectionf4 {
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    padding: 0 4.5rem 0 4.5rem;
+
+    p {
+      margin: 0%;
+    }
+
+    @include tablet {
+      padding: 0%;
+      text-align: center !important;
+      p {
+        margin: auto;
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

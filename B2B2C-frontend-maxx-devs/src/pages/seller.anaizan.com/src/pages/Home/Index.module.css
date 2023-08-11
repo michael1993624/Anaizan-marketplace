@@ -1,0 +1,102 @@
+.section1 {
+    background-image: url(../../assets/img/Vector.png);
+    padding: 3% 0 5%;
+    background-size: cover;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0% !important;
+}
+
+.circleImg {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+
+.circleImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgHome  {
+    width: 42%;
+    margin: 2rem 5rem 0 0;
+}
+
+.imgHome img {
+    width: 100%;
+    height: 100%;
+}
+.text {
+    height: max-content;
+    width: 30%;
+    margin: 3rem 0 0 5rem;
+    z-index: 1000;
+}
+
+.text p {
+    font-size: 15px !important;
+}
+
+.text h1 {
+    width: 100%;
+    font-size: 2.5rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 2%;
+}
+
+.text h1 span {
+    font-size: 2.5rem;
+    color: var(--red-color);
+}
+
+.text button {
+    background: var(--red-color);
+    color: white;
+    height: 40px;
+    width: 130px !important;
+    font-size: 15px;
+    border-radius: 30px;
+    margin-top: 1rem;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.text button:hover {
+    background: var(--red-color-hover);
+}
+
+@media screen and (max-width: 1025px) {
+    .text {
+        margin: 2% 0 0 5%;
+        width: 40%;
+    }
+    .text h1 {
+        font-size: 3rem;
+    }
+
+    .imgHome {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        display: none;
+    }
+}

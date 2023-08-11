@@ -1,0 +1,75 @@
+.grow_style {
+    width: 85%;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../../assets/img/bgLastSection.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+}
+
+.grow_style h3 {
+    font-size: 2.3rem;
+    width: 90%;
+    text-align: center;
+    color: white !important;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 480px;
+    height: 40px;
+    margin-top: 1.5rem;
+}
+
+.cta button{
+    font-size: 17px !important;
+    height: 100%;
+    width: 48% !important;
+    border-radius: 30px;
+    margin: 0 15px;
+    background: var(--red-color);
+    color: white;
+}
+
+.cta button:nth-child(1):hover {
+    background: var(--red-color-hover);
+}
+
+.cta button:last-child {
+    border: 1px solid white;
+    background: none;
+}
+
+.cta button:last-child:hover {
+    background: rgba(255, 255, 255, 0.257);
+}
+
+@media screen and (max-width: 778px) {
+    .grow_style {
+        height: 250px;
+    }   
+
+    .cta {
+        width: 450px;
+    }
+
+    .cta button {
+        font-size: 15px !important;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cta {
+        width: 360px;
+        margin-top: 0;
+    }
+}

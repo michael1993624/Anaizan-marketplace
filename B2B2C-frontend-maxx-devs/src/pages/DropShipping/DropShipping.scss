@@ -1,0 +1,128 @@
+@import "../../global/mixins.scss";
+
+.shipping-page {
+    width: 100%;
+
+    .section1-shipping {
+        margin: auto;
+
+        .block-section1 {
+            width: 100%;
+            height: 300px;
+            display: flex;
+
+            .slider {
+                width: 40%;
+                padding: 3% 0 3%;
+                display: flex;
+                justify-content: center;
+                background: linear-gradient(#CAE1F7 70%, #95C3EE 30%);
+            }
+
+            .slider img {
+                width: 75%;
+            }
+
+            .right_div {
+                width: 60%;
+                background: #3C6379;
+                color: white;
+
+                p {
+                    margin: 15% 0 0 10%;
+                    font-size: 17px !important;
+                    color: white;
+                }
+
+                h3 {
+                    font-size: 2rem !important;
+                    color: white;
+                    width: 60%;
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        @include phone {
+            .block-section1 {
+                height: 250px;
+                .slider {
+                    display: none;
+                }
+
+                .right_div {
+                    width: 100%;
+
+                    h3 {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .section2-shipping {
+
+        .block2 {
+            .block {
+                .bloc_prod {
+                    .product {
+                        .top {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include desktop_md {}
+    }
+
+    .section3-shipping {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0%;
+        padding: 0%;
+
+        .card-prod-group {
+            width: 49.3%;
+            margin: 0%;
+
+            .content-prod-rank {
+                grid-template-columns: repeat(3, 1fr);
+
+                .bloc_prod {
+                    .product {
+                        .top {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include desktop_md {
+            flex-direction: column;
+
+            .card-prod-group {
+                width: 100%;
+
+                &:nth-child(1) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        @include phone {
+            .card-prod-group {
+                .card-prod-rank {
+                    .product-rank {
+                        height: 120px;
+                    }
+                }
+            }
+        }
+    }
+}

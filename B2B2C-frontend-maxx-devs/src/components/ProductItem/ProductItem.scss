@@ -1,0 +1,12 @@
+.product-item-section {
+  border-radius: 3px;
+  border: solid 1px #b5b2b2;
+  padding: 10px;
+  background: white;
+  .product-item-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: top;
+  }
+}

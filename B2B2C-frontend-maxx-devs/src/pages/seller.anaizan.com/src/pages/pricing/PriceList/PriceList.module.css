@@ -1,0 +1,135 @@
+.terms {
+    width: 50%;
+    margin: 0 auto 3%;
+    text-align: center;
+}
+
+.colored_section {
+    margin: 2% auto;
+    padding: 3%;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+
+.blue_text {
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.colored_section h3 {
+    margin: 0 auto 1%;
+    width: 45%;
+}
+
+.text {
+    margin: 0 auto 2%;
+    width: 55%;
+    text-align: center;
+}
+
+.link {
+    font-weight: bold;
+    color: var(--blue-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.icon {
+    font-size: 18px;
+    margin-left: 1.2%;
+    color: var(--blue-color);
+}
+
+.more_info {
+    width: 80%;
+    height: 320px;
+    margin: 10% auto 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more_info img {
+    height: 100%;
+    width: 50%;
+}
+
+.text_side {
+    width: 40%;
+    height: 100%;
+}
+
+.text_side h3 {
+    width: 80%;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0%;
+}
+
+.text_side .more {
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.text_side button {
+    margin-top: 2rem;
+    width: 130px !important;
+    height: 40px !important;
+    background: var(--red-color);
+    color: white;
+    border-radius: 30px;
+}
+
+.text_side button:hover {
+    background: var(--red-color-hover);
+}
+
+.text_side .off {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+}
+
+
+@media screen and (max-width: 778px) {
+    .terms {
+        width: 70%;
+    }
+
+    .colored_section h3 {
+        width: 100%;
+    }
+
+    .text {
+        width: 95%;
+    }
+
+    .more_info img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .text_side {
+        width: 100%;
+    }
+
+    .text_side button {
+        width: 40%;
+    }
+    .text_side h3 {
+        width: 100%;
+    }
+
+    .more_info {
+        width: 80%;
+        height: max-content;
+        flex-direction: column-reverse;
+    }
+}

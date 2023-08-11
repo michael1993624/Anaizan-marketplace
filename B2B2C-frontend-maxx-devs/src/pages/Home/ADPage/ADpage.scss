@@ -1,0 +1,194 @@
+@import "../../../global/mixins.scss";
+
+.slider2 {
+  button {
+    border-radius: 0% !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: rgba(255, 255, 255, 0.434) !important;
+  }
+}
+
+.home-ad-section {
+  background: #FCC314;
+  height: 380px;
+  width: 100% !important;
+  position: relative;
+  padding: 0 160px 0 160px;
+  display: flex;
+  justify-content: space-around;
+
+  .circle {
+    height: 170%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 0%;
+    top: -15%;
+
+    .circle2 {
+      width: 80%;
+      height: 80%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      margin: 10%;
+    }
+  }
+
+  .img-banner {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+
+    &:nth-child(1) {
+      top: 0%;
+      width: 75%;
+      right: -70% !important;
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+      top: 0%;
+      right: -50% !important;
+    }
+
+    &:nth-child(3) {
+
+      top: 0%;
+      right: -30% !important;
+    }
+  }
+
+  img {
+    margin-right: 50%;
+    padding: 0;
+    width: 600px;
+    height: max-content;
+    object-fit: cover;
+  }
+
+  .ad-title-block {
+    color: white;
+    margin: auto;
+    text-align: start !important;
+
+    h1 {
+      color: white;
+      font-size: 3rem !important;
+    }
+  
+    p {
+      color: white;
+      font-size: 17px !important;
+    }
+
+    button {
+      width: 200px;
+      height: 45px;
+      font-size: 17px;
+      font-weight: 600;
+      border-radius: 30px !important;
+      margin-top: 2%;
+      cursor: pointer;
+      background: white !important;
+
+      &:hover {
+        background: rgb(215, 215, 215);
+      }
+    }
+  }
+
+  @include desktop_md {
+    img {
+      width: 400px;
+    }
+
+    .ad-title-block {
+      h1 {
+        font-size: 2.5rem !important; 
+      }
+    }
+  }
+
+  @include tablet {
+    flex-direction: column-reverse !important;
+    padding-bottom: 3rem;
+
+    img {
+      width: 500px;
+    }
+    .ad-title-block {
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      h1,p {
+        display: none;
+      }
+    }
+  }
+
+  @include phone {
+    img {
+      width: 350px;
+    }
+  }
+  
+}
+
+.home-ad2 {
+  background: #E65353;
+
+  .circle {
+    left: 0%;
+  }
+
+  .img {
+    z-index: 5000;
+    margin-left: 5% !important;
+
+    div {
+      padding: 4% 0 4%;
+
+      img {
+        color: #b6d887;
+        width: 550px;
+      }
+    }
+  }
+
+  @include tablet {
+    flex-direction: column !important;
+  }
+}
+
+.banner {
+  position: relative;
+}
+
+.slider6 {
+  height: 103% !important;
+
+  button {
+    border-radius: 0% !important;
+    background-color: var(--red-400-color);
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+    svg {
+      font-size: 0rem !important;
+    }
+  }
+
+  div {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0% !important;
+
+    img {
+      margin: 0% !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.BusinessBanner {
+    width: 100%;
+    padding: 1.5rem;
+    color: var(--white-color);
+    background: var(--red-gradient);
+}
+
+.wrap {
+    width: 88%;
+    margin: auto;
+}
+
+.wrap h1 {
+    font-size: 1.8rem !important;
+    color: white !important;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0%;
+}
+
+.wrap button {
+    width: 130px !important;
+    display: block;
+    height: 40px;
+    margin-top: 2rem;
+    font-size: 15px;
+    background: none;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    border-radius: 30px;
+}
+
+.wrap p {
+    color: white !important;
+}
+
+.wrap button:hover {
+    background: rgba(255, 255, 255, 0.327);
+}

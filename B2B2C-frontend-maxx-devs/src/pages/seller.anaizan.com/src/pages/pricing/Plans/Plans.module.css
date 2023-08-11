@@ -1,0 +1,9 @@
+.plan_style {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.plan_style svg {
+    display: block;
+    width: 100%;
+}

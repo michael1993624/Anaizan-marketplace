@@ -1,0 +1,43 @@
+.dd-wrapper {
+  // width: 365px;
+  svg {
+    path {
+      fill: #757575;
+    }
+  }
+  .dd-header-title {
+    margin: 3px 5px;
+    position: relative;
+  }
+  .dd-header {
+    border: none !important;
+    // background: #fafafa !important;
+    // border-bottom: solid 1px #9b9b9b !important;
+    outline: none;
+    font-size: 14px;
+    line-height: 32px;
+    span {
+      margin-right: 15px;
+      margin-left: 5px;
+      margin-top: 3px;
+      position: relative;
+    }
+  }
+  .dd-list {
+    margin-left: -5px;
+    .dd-scroll-list {
+      overflow-y: auto;
+      max-height: 215px;
+      padding: 5px;
+      font-size: 14px;
+      .dd-list-item {
+        font-size: 14px;
+        &:hover {
+          background-color: #eee !important;
+          // background-color: #19c79d !important;
+          // color: white !important;
+        }
+      }
+    }
+  }
+}

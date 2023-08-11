@@ -1,0 +1,52 @@
+.story_style {
+    margin: 8% auto 8%;
+    width: 85%;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.filter select {
+    font-size: 15px !important;
+    width: max-content;
+    margin-left: 2%;
+    text-align: end;
+    padding-right: 1%;
+}
+
+.filter p svg {
+    color: var(--red-color);
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+
+.filter h5 {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: var(--red-color);
+    margin-bottom: 0% !important;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta button {
+    width: 130px !important;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    margin-top: 3%;
+    background: var(--red-color);
+    border-radius: 30px;
+}
+
+.cta button:hover {
+    background: var(--red-color-hover);
+}

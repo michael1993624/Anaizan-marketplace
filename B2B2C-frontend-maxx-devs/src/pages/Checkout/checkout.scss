@@ -1,0 +1,746 @@
+@import "../../global/mixins.scss";
+
+.body_home {
+    background-color: whitesmoke;
+    padding: 3% 0 10%;
+}
+
+.checkout-page {
+    button {
+        border: none;
+        outline: none;
+    }
+
+    input {
+        outline: none;
+    }
+
+    .block-checkout-content {
+        width: 88%;
+        margin: auto;
+
+        .split-div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 25px !important;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            .div1-checkout {
+                width: 68%;
+
+                form button {
+                    width: 110px;
+                    height: 33px;
+                    background: var(--blue-color);
+                    font-size: 15px;
+                    color: white;
+                    border-radius: 4px;
+                }
+
+                .heads-section {
+                    padding: 0%;
+                    width: 100%;
+                    height: 60px;
+                    border-bottom: 1px solid var(--gray-100-color);
+                    padding: 0 1rem 0 1rem;
+
+                    h5 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        width: max-content;
+                        margin-bottom: 0%;
+
+
+                        svg {
+                            font-size: 20px;
+                            color: var(--gray-400-color);
+                            margin-right: 1rem;
+                        }
+                    }
+
+                    button {
+                        background: none;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: var(--red-400-color);
+                    }
+                }
+
+                .add-details-block,
+                .opt,
+                .method-paie,
+                .shipping {
+                    width: 100%;
+                    border-radius: 4px;
+                    background-color: white;
+                    margin-bottom: 1rem;
+                    overflow: hidden;
+                }
+
+                .add-details-block {
+                    padding: 0;
+                }
+
+                .addBtn {
+                    width: 90%;
+                    height: 80px;
+                    border-radius: 4px;
+                    border: 1px dashed rgb(125, 125, 125);
+                    margin: 4% auto;
+                    margin-bottom: 4%;
+
+                    button {
+                        width: max-content;
+                        font-size: 15px;
+                        background: none;
+
+                        svg {
+                            font-size: 19px;
+                            color: var(--gray-400-color);
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+
+                .shipping {
+                    background-color: white;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    margin-bottom: 3%;
+                }
+
+                .mode-paie {
+                    display: flex;
+                    align-items: flex-start;
+                    border-bottom: 1px solid rgb(168, 168, 168);
+                    padding: 1.2rem;
+
+                    input {
+                        height: 2rem;
+                        width: 18px;
+                        margin-right: 1rem;
+                    }
+
+                    div {
+
+                        h4 {
+                            display: flex;
+                            width: max-content;
+                            font-size: 16px;
+
+                            img {
+                                width: 90px;
+                                margin-left: 2rem;
+                            }
+                        }
+
+                        p {
+                            font-size: 15px;
+                            margin-top: 1rem;
+                        }
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+
+                .mode1 {
+                    width: 100%;
+                    border-bottom: 1px solid rgb(168, 168, 168);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 3% 0 3%;
+                }
+
+                .method-paie {
+                    background-color: white;
+
+                    .mode1 {
+                        padding: 1.2rem;
+
+                        &:nth-child(3) {
+                            .mode-pay {
+                                margin-bottom: 0%;
+
+                                img {
+                                    width: 100px;
+                                }
+                            }
+                        }
+
+                        .mode-pay {
+                            width: max-content;
+                            margin-bottom: 1rem;
+
+                            input {
+                                width: 18px;
+                                height: 2rem;
+                                margin-right: 1rem;
+                            }
+
+                            span {
+                                font-size: 16px;
+                                margin-right: 1rem;
+                            }
+
+                            img {
+                                margin: 0 9px;
+                                width: 50px;
+                            }
+                        }
+
+                        .form-card-id {
+                            padding: 0%;
+
+                            .div-input-card {
+                                margin: 0%;
+                                width: 80%;
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 1rem;
+
+                                &:nth-child(2) {
+                                    width: 50%;
+                                }
+
+                                div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 48%;
+                                    margin-right: 1rem;
+
+                                    label {
+                                        font-size: 15px;
+                                        margin-bottom: 8px;
+                                    }
+
+                                    input {
+                                        width: 100%;
+                                        height: 35px;
+                                        border: 1px solid var(--gray-100-color);
+                                        background-color: var(--gray-input-color);
+                                        font-size: 15px;
+                                        padding: 0 10px 0 10px;
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+
+                            .checkbox {
+                                input {
+                                    height: 2rem;
+                                    width: 18px;
+                                }
+
+                                span {
+                                    margin-left: 10px;
+                                    font-size: 15px;
+                                }
+
+                                b {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .opt {
+                    padding-bottom: 5%;
+                    margin-bottom: 0%;
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1.2rem;
+
+                        label {
+                            font-size: 15px;
+                        }
+
+                        textarea {
+                            font-size: 15px;
+                            padding: 8px;
+                            width: 70%;
+                            margin-bottom: 1rem;
+                            border-radius: 6px;
+                            background-color: rgb(245, 245, 245);
+                            border: 1px solid rgb(168, 168, 168);
+
+                            span {
+                                font-size: 1.1vw;
+                                width: 90%;
+                                background: rgb(245, 245, 245);
+                                resize: none;
+                                color: rgb(239, 8, 8);
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .div2-checkout {
+                width: 30%;
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    width: 100%;
+                    height: 50px;
+                    padding-left: 1rem;
+                    border-bottom: 1px solid var(--gray-100-color);
+                }
+
+                .order_div {
+                    background-color: white;
+                    margin-top: 5%;
+                    border-radius: 3px;
+                    padding-bottom: 3%;
+                    text-align: center;
+
+                    .prod-order-card {
+                        text-align: start !important;
+                        padding: 3% 0 3%;
+                        border-bottom: 1px solid rgb(159, 158, 158);
+
+                        h4 {
+                            width: 92%;
+                            margin: auto;
+                            margin-bottom: 1.3rem;
+                            font-weight: lighter;
+
+                            img {
+                                width: 25px;
+                                margin-right: 10px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                                height: max-content;
+                                font-weight: 500 !important;
+                                margin: 0%;
+                            }
+                        }
+
+                        .prod-order {
+                            width: 93%;
+                            margin: auto;
+
+                            .img-order {
+                                height: max-content;
+                                width: 28%;
+                                border-radius: 4px;
+                                background-color: rgb(238, 238, 238);
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .img-order-info {
+                                display: flex;
+                                flex-direction: column;
+                                width: 69%;
+                                padding-left: 2%;
+                                height: max-content;
+
+                                h5 {
+                                    font-size: 15px;
+                                    height: 60px;
+                                    border: none !important;
+                                    margin: 0 !important;
+                                    padding: 0%;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    color: rgb(93, 93, 93);
+                                    margin-bottom: 0%;
+
+                                    b {
+                                        font-size: 16px !important;
+                                        margin-left: 10px;
+                                    }
+                                }
+
+                                .btn-gr {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin-top: 0%;
+
+                                    b {
+                                        font-size: 18px !important;
+                                    }
+
+                                    div {
+                                        width: 45%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-around;
+
+                                        button {
+                                            width: 25px;
+                                            height: 25px;
+                                            border-radius: 50%;
+                                            font-size: 20px !important;
+                                            background: none;
+                                            color: rgb(139, 139, 139);
+                                            border: 1px solid rgb(139, 139, 139);
+                                            outline: none;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            &:hover {
+                                                background-color: rgb(245, 245, 245);
+                                            }
+                                        }
+
+                                        span {
+                                            font-size: 15px;
+                                            margin: 0 6px 0 6px !important;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .btn-check {
+                        width: 90%;
+                        height: 35px;
+                        margin: 1.2rem auto !important;
+                        font-size: 17px;
+                        color: white;
+                        background: var(--blue-color);
+                        border-radius: 4px;
+                        padding: 0%;
+
+                        &:hover {
+                            background: var(--blue-hover-color);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        @include tablet {
+            .split-div {
+                flex-direction: column !important;
+
+                .div1-checkout {
+                    width: 100%;
+                }
+
+                .div2-checkout {
+                    width: 400px;
+                    margin-top: 3rem;
+                }
+            }
+        }
+
+        @include phone {
+            .split-div {
+                .div1-checkout {
+                    .method-paie {
+                        .mode1 {
+                            .mode-pay {
+                                display: flex;
+                                flex-direction: column;
+
+                                div {
+                                    width: 100%;
+                                    margin-bottom: 1rem;
+                                    
+                                    &:nth-child(2) {
+                                        margin-left: 3rem;
+                                    }
+                                }
+                            }
+
+                            .form-card-id {
+                                .div-input-card {
+                                    width: 100%;
+
+                                    &:nth-child(2) {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                .mode-pay {
+                                    flex-direction: row !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .opt {
+                        form {
+                            textarea {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .div2-checkout {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .popup-success-order {
+        background-color: white;
+        width: 100vw !important;
+        height: 100vh !important;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        border: 1px solid;
+        position: fixed;
+        top: 0%;
+        z-index: 5000;
+
+        .msg {
+            width: 450px;
+            height: max-content;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.504);
+            text-align: center;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            img {
+                width: 50%;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 27px !important; 
+            }
+
+            p {
+                margin: 6px auto;
+                font-size: 15px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            button {
+                padding: 0% 1rem 0 1rem;
+                margin-bottom: 2rem;
+                width: max-content;
+                height: 40px;
+                font-size: 15px;
+                color: white;
+                background:var(--blue-color);
+                border-radius: 4px;
+
+                &:hover {
+                    background: var(--blue-hover-color);
+                }
+            }
+        }
+
+        @include tablet {
+            .msg {
+                width: 90%;
+            }
+        }
+    }
+
+    .popup-checkout {
+        background-color: white;
+        width: 100vw !important;
+        height: 100vh !important;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        border: 1px solid;
+        position: fixed;
+        top: 0%;
+        z-index: 5000;
+
+        .loader-circle {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+
+            .circle {
+                width: 70%;
+                height: 70%;
+                border: 3px solid red;
+                border-radius: 50%;
+               /*  animation: circle 6s infinite linear; */
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    background: none;
+                    width: 55%;
+                    height: 55%;
+                    position: absolute;
+                    border: 5px solid brown;
+                    border-radius: 50px;
+                    top: 0%;
+                }
+                circle {
+                    width: 100%;
+                    height: 50%;
+                    border: 3px solid black;
+                    border-radius: 50%;
+                    stroke-width: 5px;
+                    stroke: aqua;
+                    stroke-dasharray: 80;
+                    position: absolute;
+                    fill: none;
+                }
+            }
+
+            @keyframes circle {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+        form span {
+            color: rgb(239, 8, 8);
+        }
+
+        .form-address {
+            height: max-content;
+            width: 600px;
+            height: max-content;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.428);
+
+            h3 {
+                font-size: 22px !important;
+                font-weight: lighter;
+                width: 100%;
+                position: relative;
+                margin-bottom: 1.2rem;
+
+                span {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -80%;
+                    right: 0%;
+                    cursor: pointer;
+                    color: var(--gray-400-color) !important;
+                }
+            }
+
+            .div-form-address {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 47%;
+
+                    input,
+                    select {
+                        width: 100%;
+                        height: 34px;
+                        border-radius: 4px;
+                        background-color: var(--gray-input-color);
+                        border: 1px solid var(--gray-100-color);
+                        padding: 0 10px 0 10px;
+                        color: var(--gray-400-color);
+                    }
+
+                    label {
+                        font-size: 15px;
+                        margin-bottom: _px;
+                    }
+
+                    textarea {
+                        resize: none;
+                        outline: none;
+                        border: 1px solid var(--gray-100-color);
+                        border-radius: 4px;
+                        font-size: 14px;
+                        width: 100%;
+                        padding: 5px;
+                        background-color: var(--gray-input-color);
+                    }
+                }
+            }
+
+            .btns {
+                width: 45%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 7%;
+
+                button {
+                    width: 45%;
+                    font-size: 16px;
+                    padding: 2% 0 2%;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: var(--blue-color);
+
+                    &:hover {
+                        background: rgb(92, 127, 230);
+                    }
+
+                    &:last-child {
+                        background: none;
+                        border: 1px solid var(--blue-color);
+                        color: var(--blue-color);
+
+                        &:hover {
+                            background: rgba(54, 101, 242, 0.224);
+                        }
+                    }
+                }
+            }
+        }
+
+        @include tablet {
+            .form-address  {
+                width: 90%;
+            }
+        }
+    }
+}

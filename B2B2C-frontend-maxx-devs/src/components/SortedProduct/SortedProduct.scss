@@ -1,0 +1,39 @@
+.sort {
+    width: 90%;
+    margin: 12px 0 3rem 1rem;
+
+    label {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0% !important;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        margin: 0% 1rem !important;
+
+        span {
+            font-size: 15px;
+            color: rgb(79, 79, 79);
+            margin-right: 4%;
+        }
+
+        select {
+            height: 28px;
+            width: max-content;
+            font-size: 14px !important;
+            color: rgb(79, 79, 79) !important;
+            border: 1px solid var(--gray-400-color);
+            margin-left: 8px;
+            border-radius: 4px;
+            outline: none;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .sort {
+        display: none;
+    }
+}

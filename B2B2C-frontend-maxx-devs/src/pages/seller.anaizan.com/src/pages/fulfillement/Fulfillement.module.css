@@ -1,0 +1,60 @@
+.divs{
+    width: 70%;
+    margin: 10% auto;
+    margin-bottom: 3%;
+    box-shadow: 0 0 3px rgb(156, 156, 156);
+    padding: 3% 4% 3% 4%;
+    position: relative;
+}
+
+.divs::before {
+    content: "";
+    width: 0.5%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  var(--red-color);
+}
+
+.divs h2 {
+    margin-bottom: 1%;
+}
+
+.divs h2 span {
+    color: var(--red-color);
+}
+
+.divs p {
+    margin-bottom: 1%;
+    text-align: justify;
+}
+
+.divs p b {
+    color: var(--red-color);
+    margin-right: 1%;
+}
+
+.div_child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.div_child div {
+    width: 93%;
+}
+
+.div_child h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0%;
+}
+
+.div_child div h5 {
+    font-weight: 700 ;
+    margin: 0;
+}

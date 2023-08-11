@@ -1,0 +1,371 @@
+@import "../../../global/mixins.scss";
+
+.seller-profile-page {
+    background-color: rgb(240, 240, 240);
+    padding: 2% 0 10%;
+
+    button {
+        outline: none;
+        border: none;
+        transition: 0.7s;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .section1-profile-page {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 0 3%;
+        position: relative;
+
+        .bloc-nav-menu {
+            width: 230px;
+            height: max-content;
+            background-color: white;
+            border-radius: 4px;
+
+            ul {
+                width: 100%;
+                padding: 10px 0 10px;
+
+                li {
+                    width: 100%;
+                    height: 48px;
+                    color: black;
+                    padding-left: 1rem;
+                    text-align: start;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        font-size: 16px;
+                        width: 100%;
+                        color: var(--link-color);
+                    }
+
+                    &:hover {
+                        background-color: var(--blue-hover-transparent-color);
+                    }
+                }
+            }
+
+            @include desktop_md{
+                display: none;
+            }
+        }
+
+        .tab-content-profil {
+            width: 75%;
+
+            .table-profil {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 1rem auto !important;
+                border: 1px solid var(--gray-300-color) !important;
+
+                tr {
+                    td {
+                        padding: 1rem;
+                        font-size: 15px;
+
+                        &:nth-child(1),
+                        &:nth-child(3) {
+                            width: 22%;
+                        }
+
+
+                        &:nth-child(2),
+                        &:nth-child(4) {
+                            width: 28%;
+                        }
+                    }
+                }
+            }
+
+
+            .head-tab-profil {
+                height: 60px;
+                width: 100%;
+                border-radius: 4px;
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h3 {
+                    font-size: 20px !important;
+                    font-weight: lighter;
+                    width: auto;
+                    margin-left: 1rem;
+                    margin-bottom: 0%;
+
+                    span {
+                        padding: 3px 8px 3px 8px;
+                        font-size: 15px;
+                        background-color: whitesmoke;
+                        border: 1px solid rgb(139, 139, 139);
+                        color: black;
+                        margin-left: 1rem;
+                        border-radius: 4px;
+                    }
+                }
+
+                div {
+                    width: max-content;
+                    height: 100%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    margin-right: 1rem;
+
+                    button {
+                        font-size: 16px;
+                        height: 60%;
+                        background: none;
+                        width: auto;
+                        border-radius: 30px;
+                        margin: 0 10px;
+                        padding: 0 1rem 0 1rem !important;
+
+                        &:hover {
+                            background: var(--blue-hover-transparent-color);
+                        }
+
+                        &:last-child {
+                            background: var(--blue-color);
+                            color: white;
+                            width: 50%;
+
+                            &:last-child:hover {
+                                background: var(--blue-hover-color);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .container-tab-profil {
+                width: 100%;
+                margin-top: 2%;
+
+                #b {
+                    display: none;
+                }
+
+                #show {
+                    display: block;
+                }
+
+                h3 {
+                    text-align: start;
+                    font-size: 25px !important;
+                    font-weight: lighter;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tab1-profil {
+                    width: 100% !important;
+                    background-color: white;
+                    border-radius: 4px;
+                    padding: 1rem;
+                    margin-bottom: 2%;
+
+                    #p {
+                        width: max-content !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 15px;
+                        color: rgb(72, 72, 72);
+
+                        span {
+                            margin: 0 1rem 0;
+                        }
+                    }
+
+                    .block-div-overview {
+                        width: 100%;
+                        margin: auto;
+
+                        .group-sale {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 1rem;
+                            margin: 2% 0 0;
+
+                            img {
+                                width: 100%;
+                                margin: auto;
+                            }
+                        }
+
+                        .infos-sale {
+                            margin-top: 1rem;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            div {
+                                width: 70%;
+
+                                &:nth-child(1) {
+                                    h3 {
+                                        font-size: 20px !important;
+                                        margin: 1rem 0 10px;
+                                    }
+
+                                    p {
+                                        width: 95% !important;
+                                        text-align: justify;
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    width: 30%;
+                                    border-left: 1px solid rgb(139, 139, 139);
+
+                                    p {
+                                        text-align: none;
+                                        height: 40px;
+                                        width: 100%;
+                                        margin: 0% !important;
+                                        display: flex;
+                                        align-items: center;
+
+                                        label {
+                                            width: 58%;
+                                            margin: 0%;
+                                            text-align: end;
+                                            padding-right: 2%;
+                                            font-size: 15px;
+
+                                        }
+
+                                        b {
+                                            width: 35%;
+                                            font-size: 16px;
+                                            text-align: start;
+                                            margin: 0%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bloc2 {
+                    width: 100%;
+                    border-radius: 4px;
+                    background-color: white;
+                    padding: 1rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .bloc2 h4 {
+                    font-size: 18px;
+                    margin: 0 0 1px !important;
+                }
+
+                .bloc2 table thead th {
+                    text-align: start;
+                    padding: 1.5% 0 1.5%;
+                    text-indent: 8%;
+                }
+
+                .bloc2 table tr td {
+                    color: rgb(69, 69, 69);
+                }
+
+                .bloc2 table tr td svg {
+                    color: #0a72d3;
+                    font-size: 1.6vw;
+                    border: 1px dashed #0a72d3;
+                    border-radius: 50%;
+                }
+
+                .list-prod-slide {
+                    width: 100% !important;
+
+                    @include tablet {
+                        display: none !important;
+                    }
+                }
+
+                .bloc3 {
+                    width: 100%;
+                    margin-top: 1rem;
+                    border-radius: 4px;
+                    padding: 1rem;
+                    background-color: white;
+                }
+
+                .bloc3 h3 {
+                    font-size: 20px !important;
+                    margin: 1% 0 3%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .bloc3 h3 svg {
+                    font-size: 1.5rem;
+                    margin-left: 1rem;
+                    color: var(--blue-color);
+                }
+
+                .bloc3 h4 {
+                    font-size: 16px;
+                    font-weight: lighter;
+                    margin: 0 0 1rem;
+                }
+
+                .pdfs {
+                    width: max-content;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .pdf {
+                    width: 180px;
+                    margin-right: 1rem;
+                }
+
+                .pdf div {
+                    background: linear-gradient(rgb(246, 246, 246), rgb(89, 89, 89));
+                    width: 100%;
+                    height: 250px;
+                    padding: 100% 0 2%;
+                    position: relative;
+                }
+
+                .pdf div b {
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                    float: right;
+                }
+
+                .pdf div a {
+                    font-size: 2rem;
+                    color: black;
+                    position: absolute;
+                    top: 6%;
+                    right: 6%;
+                }
+
+                .pdf p {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+
+            @include desktop_md {
+                width: 100%;
+            }
+        }
+    }
+}

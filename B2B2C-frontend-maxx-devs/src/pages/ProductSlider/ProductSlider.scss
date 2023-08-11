@@ -1,0 +1,12 @@
+.product-slider-section {
+  .product-slider-card {
+    border: solid 1px #ddd;
+    width: 270px;
+    .product-slider-img {
+      width: 270px;
+      height: 170px;
+      object-fit: cover;
+      padding: 5px;
+    }
+  }
+}

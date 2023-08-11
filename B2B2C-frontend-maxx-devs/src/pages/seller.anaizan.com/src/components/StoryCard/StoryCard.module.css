@@ -1,0 +1,113 @@
+.block {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.story_card {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--card-color);
+    color: var(--text-color);
+    transition: 0.7s;
+}
+.story_card:hover {
+    box-shadow: 0 0 15px rgb(179, 179, 179);
+}
+
+.story_card:nth-child(1),
+.story_card:nth-child(2),
+.story_card:nth-child(3) {
+    margin-top: 0% !important;
+}
+
+.top {
+    width: 100%;
+    overflow: hidden;
+}
+.top img {
+    width: 100%;
+}
+
+.bottom {
+    padding: 5%;
+}
+
+.tag {
+    font-size: 15px !important;
+    opacity: 0.5;
+}
+
+.story {
+    margin: 8px 0 1rem !important;
+    width: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    margin-bottom: 10px;
+}
+.user h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    overflow: hidden;
+    border: 1px solid;
+}
+
+.img img {
+    height: 100%;
+    width: 100%
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0rem;
+    font-size: 0.8rem;
+}
+
+.contact p {
+    font-size: 15px !important;
+    display: flex;
+    align-items: center;
+}
+
+.contact p svg {
+    margin-right: 5px;
+}
+
+.contact p:first-child svg {
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .block {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .story {
+        margin-bottom: 8% !important;
+    }
+
+}
+
+
+@media screen and (max-width: 778px) {
+    .block {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

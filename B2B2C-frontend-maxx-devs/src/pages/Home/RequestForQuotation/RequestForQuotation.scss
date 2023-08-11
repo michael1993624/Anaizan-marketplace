@@ -1,0 +1,243 @@
+@import "../../../global/mixins.scss";
+
+.sectionb6_div3 {
+  width: 100%;
+  margin-top: 0.1%;
+  margin-bottom: 1%;
+  padding: 0% !important;
+
+  .sectionb6_div3_head {
+    height: 65px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-100-color);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5%;
+
+    img {
+      width: 40px;
+      margin: 0 2% 0 2%;
+    }
+
+    h3 {
+      font-size: 17px !important;
+      font-weight: lighter;
+      margin-right: 3%;
+      margin-bottom: 0% !important;
+    }
+
+    span {
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    div {
+      width: 48%;
+      padding: 0.1%;
+      margin-left: 5%;
+      border-radius: 30px;
+      background-color: rgb(199, 199, 199);
+    }
+  }
+
+
+  .sectionb6_div3_form {
+    width: 100%;
+    height: max-content;
+    padding: 1% 0 0%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sectionb6_div3_form .lefts {
+    width: 48.3%;
+    height: max-content;
+    background: #FF9900;
+    color: #ffffff;
+    padding: 5% 0 5% 4% !important;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0% !important;
+  }
+
+  .lefts h1 {
+    font-size: 3rem !important;
+    color: white;
+    width: 82%;
+    word-break: break-all;
+    margin: 4% 0 16%;
+    z-index: 1000;
+  }
+
+  .lefts div {
+    z-index: 1000;
+  }
+
+
+  .lefts img {
+    position: absolute;
+    top: -25%;
+  }
+
+  .lefts img:nth-child(1) {
+    right: -23%;
+  }
+
+
+  .lefts img:nth-child(2) {
+    right: -18%;
+  }
+
+
+  .lefts img:nth-child(3) {
+    right: -10%;
+  }
+
+  .lefts button {
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 32%;
+    height: 50px;
+    z-index: 10000;
+  }
+
+  .right_form {
+    background-color: white;
+    width: 50%;
+    border-radius: 3px;
+    margin-bottom: 0% !important;
+  }
+
+  .right_form form {
+    width: 90%;
+    margin: 3% auto;
+    padding-top: 3%;
+  }
+
+  .right_form form h3 {
+    font-size: 20px !important;
+    margin-bottom: 3%;
+  }
+
+  .right_form .div_f {
+    width: 100%;
+    display: flex;
+    margin-bottom: 4%;
+  }
+
+  .div_f input {
+    width: 100%;
+    height: 40px;
+    padding: 0 2% 0 !important;
+    font-size: 15px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 30px;
+    text-indent: 1%;
+  }
+
+  .right_form .div_fs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+  }
+
+  .div_fs div {
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  .div_fs div input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 30px;
+    text-indent: 6%;
+    font-size: 15px;
+  }
+
+  .select_temp {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
+  .select_temp div {
+    width: max-content;
+    height: 40px;
+    padding: 0 2% 0 2%;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 1.5%;
+    border: 1px solid rgb(217, 217, 217);
+    cursor: pointer;
+    transition: 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .select_temp div:hover {
+    background: #f18e8e;
+  }
+
+  .select_temp div:nth-child(1) {
+    background: #fdc9cd;
+    border: none;
+  }
+
+  .sectionb6_div3_form .right_form button {
+    width: auto;
+    height: 40px;
+    background: var(--red-400-color);
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 4%;
+    padding: 0 1rem 0 1rem;
+    color: white;
+  }
+
+  .sectionb6_div3_form .right_form button:hover {
+    background: #ef4b56;
+  }
+
+  @include desktop_md {
+      .sectionb6_div3_head {
+        h3 {
+          margin-right: 5rem;
+        }
+        div {
+          display: none;
+        }
+      }
+
+      .sectionb6_div3_form {
+        flex-direction: column;
+
+        .lefts {
+          width: 100% !important;
+        }
+
+        .right_form {
+          width: 100% !important;
+        }
+      }
+    }
+
+    @include tablet {
+      .sectionb6_div3_head {
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+}

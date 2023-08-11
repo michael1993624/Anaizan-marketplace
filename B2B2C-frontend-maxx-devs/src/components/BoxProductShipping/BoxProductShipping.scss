@@ -1,0 +1,122 @@
+@import "../../global/mixins.scss";
+
+.card-prod-group {
+    margin-top: 0;
+    border: 1px solid rgb(218, 218, 218);
+
+    .head-prod-rank {
+        border-top-left-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--gray-100-color);
+        height: 55px;
+        padding: 0% 1rem 0 1rem;
+
+        h3 {
+            font-size: 18px !important;
+            margin-bottom: 0% !important;
+        }
+
+        a {
+            width: 18%;
+
+            span {
+                float: right;
+                margin-right: 8%;
+                font-size: 1.28vw;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    font-size: 2vw;
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .content-prod-rank {
+        padding: 1rem 1rem 10px 1rem;
+        width: 100%;
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+
+        .card-prod-rank {
+            height: max-content;
+            width: 100%;
+            text-align: center;
+
+            .product-rank {
+                height: 160px;
+                width: 100%;
+                border-radius: 4px;
+                margin: auto;
+                background: rgb(218, 218, 218);
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &:hover {
+                    transform: none;
+                }
+
+                img {
+                    width: 60%;
+                    height: 70%;
+                    transition: 0.7s;
+
+                    &:nth-child(1) {
+                        position: absolute !important;
+                        top: 0% !important;
+                        left: 0%;
+                        height: max-content !important;
+                        width: 40px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.07);
+                    }
+                }
+
+
+            }
+
+
+            h4 {
+                margin: 2rem 0 1rem;
+                font-weight: 500 !important;
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    @include desktop_md {
+        .content-prod-rank {
+            grid-template-columns: repeat(3,1fr);
+
+            .card-prod-rank {
+                width: 85%;
+                margin: auto;
+            }
+        }
+    }
+
+    @include tablet {
+        .content-prod-rank {
+            .card-prod-rank {
+                width: 95%;
+            }
+        }
+    }
+
+    @include phone {
+        .content-prod-rank {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}

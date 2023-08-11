@@ -1,0 +1,55 @@
+.button-wrapper {
+  color: white;
+  background-color: #51a8db;
+  padding: 8px 16px;
+  font-weight: 600;
+  border: none;
+  // flex-grow: 1;
+  // flex-basis: 120px;
+  min-width: 153px;
+  min-height: 38px;
+  @media only screen and (device-width: 1440px) {
+    font-size: 14px;
+    min-width: 140px;
+    min-height: 30px;
+  }
+  svg {
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
+}
+.background-light {
+  border: solid 1px #51a8db;
+  background-color: white;
+  color: #51a8db;
+}
+.border-white {
+  border: solid 1px white;
+  background-color: #51a8db;
+  color: white;
+}
+.border-black {
+  border: solid 1px #4a4a4a;
+  color: #4a4a4a;
+  background-color: white;
+}
+.background-white {
+  background-color: white !important;
+  color: #51a8db;
+}
+
+.blue-background {
+  background-color: blue !important;
+  color: white;
+}
+.subscribe-button {
+  background: #4b8da5;
+  border-radius: 5px;
+}
+
+.order-button{
+  background: rgb(235, 136, 7);
+  border-radius: 25px;
+  width: 240px;
+  height: 50px;
+}

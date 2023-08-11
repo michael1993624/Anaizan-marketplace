@@ -1,0 +1,11 @@
+.section_heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 9%;
+}
+
+.section_heading p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}

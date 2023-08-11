@@ -1,0 +1,113 @@
+.drop-block h3 {
+    border-bottom: 1px solid red;
+    margin-bottom: 1rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px !important;
+    padding: 0% !important;
+
+    ul {
+        font-size: 15px !important;
+        margin-bottom: 5px;
+
+        svg {
+            color: red;
+        }
+
+        span {
+            font-size: 15px !important;
+        }
+    }
+
+    .namecat {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 0px !important;
+        cursor: pointer;
+
+        span {
+            font-size: 15px !important;
+            svg {
+                margin-right: 5px;
+                color: var(--red-color);
+            }
+        }
+    }
+
+    .div-subcat {
+        margin: 4px 0 8px 10px;
+        padding-right: 0%;
+        width: 90%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        .sub {
+            padding: 0% !important;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+
+            &:last-child {
+                margin-bottom: 0%;
+            }
+
+            .div-item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                height: max-content;
+                padding-left: 4%;
+                margin-top: 6px;
+
+                li {
+                    cursor: pointer;
+                    width: 90%;
+                    padding: 2% 0 2%;
+                    text-indent: 5%;
+
+                    &:hover {
+                        background-color: whitesmoke;
+                    }
+                }
+            }
+
+            .click-item {
+                cursor: pointer;
+                display: flex;
+                justify-content: start;
+
+                span {
+                    margin-right: 4px;
+                }
+            }
+
+            li {
+                width: 100%;
+                text-align: start;
+                padding-left: 4px !important;
+                font-size: 14px !important;
+            }
+
+        }
+    }
+
+}
+
+.showItem {
+    height: max-content !important;
+}
+
+.hideItem {
+    height: 0vh !important;
+}

@@ -1,0 +1,127 @@
+.cate-dropdown-menu {
+  &:hover {
+    .menu-panel {
+      display: block;
+    }
+  }
+}
+
+.menu-panel {
+  display: none;
+  background: #fff;
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #ddd;
+  width: 310px;
+  position: absolute;
+  z-index: 1001;
+  left: 0%;
+  top: 100%;
+  list-style: none;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      //   box-shadow: 10px 10px 12px #ddd;
+      //   border: 1px solid #ddd;
+      color: red;
+
+      .sub-menu-panel {
+        display: block;
+      }
+    }
+  }
+}
+
+.sub-menu-panel {
+  background: #fff;
+  padding: 10px;
+  min-width: 700px;
+  height: 100%;
+  position: absolute;
+  z-index: 1001;
+  left: 310px;
+  top: 0;
+  color: #000;
+  display: none;
+
+  &:hover {
+    display: block;
+  }
+
+  p {
+    margin-bottom: 2%;
+  }
+
+  a {
+    cursor: pointer;
+    margin-bottom: 3px;
+    font-size: 14px;
+    border: none !important;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.dropdown-menu-1 {
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  text-align: center;
+
+  ul {
+    position: absolute;
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    line-height: 35px;
+    text-decoration: none;
+
+    &:hover {
+      background: blue;
+
+      ul {
+        display: block;
+        margin-left: 200px;
+        /*This must be width of menu box*/
+        margin-top: -35px;
+        display: block;
+
+        ul {
+          display: none;
+        }
+      }
+    }
+
+    li {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/*--- Sublevel UL's display and position on hover ---*/
+
+nu-li {
+  padding: 10px;
+}
+
+.dropdown-submenu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}

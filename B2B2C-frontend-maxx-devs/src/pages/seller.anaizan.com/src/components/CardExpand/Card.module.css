@@ -1,0 +1,47 @@
+.Card {
+    width: 100%;
+    margin: auto;
+}
+
+.top {
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+
+.top img {
+    width: 100%;
+}
+
+.top .Ctag {
+    position: absolute;
+    bottom: 15%;
+    right: 3.3%;
+    background: var(--red-color);
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    color: var(--white-color);
+    font-weight: bold;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 10px 0px 0px 0px;
+}
+
+.Card p {
+    padding: 1.2%;
+    margin-top: 2%;
+    width: 96%;
+    margin: auto;
+}
+
+@media screen and (max-width: 778px) {
+    .Card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .Card:last-child {
+        margin-bottom: 0%;
+    }
+}

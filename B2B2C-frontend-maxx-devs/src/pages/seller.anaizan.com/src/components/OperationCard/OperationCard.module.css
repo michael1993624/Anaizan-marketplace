@@ -1,0 +1,41 @@
+.operation {
+    width: 90%;
+    margin: auto;
+}
+ .operation h4 {
+    font-size: 18px !important;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px 0;
+  }
+
+  .operation h4 span {
+    font-size: 18px !important;
+    color: var(--red-color);
+  }
+
+  .operation ul {
+    padding-left: 1rem;
+  }
+
+ .operation li {
+    font-size: 15px !important;
+    width: 90%;
+    list-style-type:disc;
+    margin-top: 1rem;
+    margin-left: 0%;
+    text-align: start !important;
+  }
+
+  @media screen and (max-width: 800px) {
+
+  }
+
+  
+  @media screen and (max-width: 500px) {
+
+    .operation {
+        margin-top: 6%;
+    }
+
+  }

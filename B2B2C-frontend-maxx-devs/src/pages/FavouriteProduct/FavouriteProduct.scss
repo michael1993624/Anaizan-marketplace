@@ -1,0 +1,323 @@
+.favourite-product-page {
+    width: 100%;
+    padding: 2% 0 10%;
+    background: rgb(240, 240, 240);
+
+    .section1-favourite-prod {
+        width: 88%;
+        margin: auto;
+
+        .block1-section-fp {
+            width: 100%;
+            padding: 0%;
+            margin-bottom: 0%;
+
+            .tabs-content-fp {
+                width: 100%;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                padding-top: 0%;
+                padding-bottom: 3%;
+
+                .head-tab-fp {
+                    margin-top: 0%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    background-color: var(--gray-100-color);
+                    padding: 8px 0 0 10px;
+
+                    button {
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        font-size: 15px;
+                        width: 130px;
+                        height: 40px;
+                    }
+                }
+
+                .tab-group-fp {
+                    width: 100%;
+                    position: relative;
+
+                    .tabs {
+                        width: 100%;
+                        display: block;
+                    }
+
+                    .hide {
+                        display: none;
+                    }
+
+                    .tab-content-head-fp {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 2rem;
+
+                        span {
+                            font-size: 15px;
+                            margin-left: 1rem;
+                        }
+
+                        div {
+                            display: flex;
+                            width: max-content;
+                            align-items: center;
+                            margin-left: 1rem;
+
+                            button {
+                                font-size: 15px;
+                                width: max-content;
+                                height: 32px;
+                                padding: 0 10px;
+                                border-radius: 4px;
+                                margin: 0 8px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: none;
+                                color: var(--gray-400-color);
+                                border: 1px solid rgb(149, 148, 148);
+                                background-color: whitesmoke;
+
+                                svg {
+                                    font-size: 20px;
+                                    margin-right: 10px;
+                                }
+
+                                &:hover {
+                                    background: rgb(233, 233, 233);
+                                }
+                            }
+
+                            input {
+                                height: 2rem;
+                                width: 18px;
+                                margin-right: 2rem;
+                                border: 1px solid rgb(149, 148, 148);
+                            }
+                        }
+                    }
+
+                    /* content tab 1 */
+                    .content-tab-fp {
+                        width: 100%;
+                        padding-top: 2rem;
+
+                        .div-card-fp {
+                            width: 96%;
+                            background: white;
+                            margin: 0rem auto;
+                            margin-bottom: 0% !important;
+                            border-top: 1px solid var(--gray-100-color);
+                            padding: 2rem;
+                            display: flex;
+                            align-items: flex-start;
+
+                            input {
+                                height: 2rem;
+                                width: 18px;
+                            }
+
+                            .imgs-fp {
+                                display: flex;
+                                margin-left: 1rem;
+                                margin-bottom: 0% !important;
+                                width: 95%;
+                                height: 180px;
+
+                                .img-fp {
+                                    width: 16%;
+                                    height: 100%;
+                                    background: rgb(218, 218, 218);
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 1rem;
+                                    margin-right: 2%;
+                                    border-radius: 4px;
+
+                                    img {
+                                        height: 90%;
+                                        width: 80%;
+                                    }
+                                }
+
+                                .infos-div-fp {
+                                    width: 100%;
+
+                                    h3 {
+                                        width: 100%;
+                                        font-size: 17px !important;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin-bottom: 2%;
+
+                                        button {
+                                            width: 180px !important;
+                                            margin: 0% !important;
+                                            border-radius: 30px !important;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            &:hover {
+                                                background: rgb(78, 119, 242);
+                                            }
+                                        }
+                                    }
+
+                                    h3:nth-child(2) {
+                                        span {
+                                            color: rgb(69, 69, 69);
+                                            font-weight: lighter;
+                                            width: 50%;
+
+                                            img {
+                                                width: 20px;
+                                                margin-right: 8px;
+                                            }
+                                        }
+
+                                        button {
+                                            background: none;
+                                            color: black;
+
+                                            &:hover {
+                                                background: rgba(22, 75, 232, 0.121);
+                                            }
+
+                                            svg {
+                                                font-size: 1.7vw;
+                                                color: rgb(28, 80, 237);
+                                                margin-right: 3%;
+                                            }
+
+                                        }
+                                    }
+
+                                    b {
+                                        font-size: 17px;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    p {
+                                        font-size: 15px;
+                                        margin-top: 0%;
+                                        margin-bottom: 0% !important;
+                                        font-style: italic;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    /* content tab 2 */
+                    .content-tab2-fp {
+                        width: 100%;
+                        height: max-content;
+
+                        .card-group-shop {
+                            border-top: 1px solid rgb(149, 148, 148);
+                            width: 95%;
+                            height: max-content;
+                            margin: auto;
+                            display: flex;
+                            align-items: flex-start;
+                            margin-top: 1rem;
+                            
+                            padding: 1rem 0 1rem;
+
+                            input {
+                                height: 2rem;
+                                width: 18px;
+                                margin-right: 1rem;
+                            }
+
+                            .card-supplier-shop {
+                                width: 70%;
+                                display: flex;
+                                flex-direction: column;
+                                margin-top: 0.5%;
+
+                                h3 {
+                                    font-size: 17px !important;
+                                    font-weight: lighter;
+                                    width: 100%;
+                                    color: var(--gray-400-color);
+                                    margin-bottom: 1rem;
+
+
+                                    img {
+                                        width: 25px;
+                                        margin-right: 1rem;
+                                    }
+                                }
+                            }
+
+                            .group-shop {
+                                width: 100%;
+
+                                div {
+                                    width: 32%;
+
+                                    img {
+                                        width: 100%;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    h4 {
+                                        font-size: 15px !important;
+                                        width: 97%;
+                                    }
+                                }
+                            }
+
+                            .btn-group-right {
+                                width: max-content;
+                                margin-left: 13%;
+                                display: flex;
+                                flex-direction: column;
+
+                                button {
+                                    background: var(--blue-color);
+                                    color: white;
+                                    font-size: 15px;
+                                    border-radius: 30px;
+                                    width: 160px;
+                                    height: 35px;
+
+                                    &:hover {
+                                        background: rgb(120, 152, 249);
+                                    }
+
+                                    &:nth-child(2) {
+                                        background: none;
+                                        margin-top: 3%;
+                                        color: black;
+
+                                        &:hover {
+                                            background: rgba(28, 80, 237, 0.138);
+                                        }
+
+                                        svg {
+                                            font-size: 1.6vw;
+                                            color: rgb(28, 80, 237);
+                                            margin-right: 3%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+          }
+
+}
+
+/* style pour la responsivité */

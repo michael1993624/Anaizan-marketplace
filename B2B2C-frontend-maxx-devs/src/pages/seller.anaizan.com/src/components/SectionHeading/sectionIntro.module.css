@@ -1,0 +1,37 @@
+.section_intro {
+    text-align: center;
+    margin-bottom: 0% !important;
+}
+
+.section_intro h2 {
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.section_intro h2 span {
+    color: var(--red-color);
+}
+
+.section_intro h2:before {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: var(--orange-color);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.section_intro p {
+    margin: 1rem auto 2rem;
+    width: 78%;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .section_intro p {
+        width: 95%;
+    }
+}

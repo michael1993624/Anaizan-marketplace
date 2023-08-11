@@ -1,0 +1,85 @@
+.ranking-page {
+    width: 100%;
+    padding: 2% 0 10%;
+    background-color: rgb(240, 240, 240);
+
+    .section1-ranking {
+        margin: auto;
+        height: 400px !important;
+
+        .div-child-ranking {
+            background: #EA87B8;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-radius: 4px;
+            padding: 1.3rem;
+
+            div {
+                height: 70%;
+
+                &:nth-child(1) {
+                    width: 40%;
+                    color: white;
+                    padding: 8% 0 0 2%;
+                }
+
+
+                h3 {
+                    font-size: 33px !important;
+                    color: white;
+                }
+
+                p {
+                    color: white;
+                    font-size: 17px !important;
+                    width: 80%;
+                }
+
+                &:nth-child(2) {
+                    width: 60%;
+
+                    img {
+                        width: 25%;
+
+                        &:nth-child(1),
+                        &:nth-child(3) {
+                            height: 70%;
+                        }
+
+                        &:nth-child(2) {
+                            height: 100%;
+                            margin: 0 1rem 0 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section2-ranking {}
+
+    #badge {
+        position: absolute;
+        width: 20%;
+        left: 5%;
+        top: -43%;
+    }
+}
+
+/*  style pour la responsivité */
+@media screen and (max-width: 620px) {
+    .section1 {
+        width: 100%;
+    }
+
+    .block1 div h3 {
+        width: 100%;
+        font-size: 4vw !important;
+    }
+
+    .block1 div p {
+        font-size: 3vw !important;
+        width: 100%;
+    }
+}

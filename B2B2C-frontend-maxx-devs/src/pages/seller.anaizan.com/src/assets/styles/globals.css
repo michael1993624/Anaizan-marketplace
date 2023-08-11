@@ -1,0 +1,104 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+  --text-color: #453B3B;
+  --red-color: #CA000F;
+  --red-color-hover: #f14853;
+  --blue-color: #2B88DE;
+  --deep-blue: #0000ff;
+  --brown-color: #474246;
+  --deep-brown: #453B3B;
+  --yellow-color: #FDCF41;
+  --white-color: #fff;
+  --sky-blue: #EDF2FD;
+  --bg-color: #ecf2fa;
+  --orange-color: #FF9900;
+  --orange-gradient: linear-gradient(111.65deg, #CA000F -86.01%, #F5AD49 118.54%);
+  --card-color: #F2F4F8;;
+  --red-gradient: linear-gradient(167.2deg, #CA000F -241.39%, rgba(202, 0, 15, 0.69) 140.72%);
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+button {
+  outline: none;
+  transition: 0.7s;
+  border: none;
+}
+
+select {
+  border: none;
+  outline: none;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 10% !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.section-first {
+  height: 95vh;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+
+@media screen and (max-width: 1025px) {
+  .section-first {
+    height: 70vh;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .section-first {
+    height: 60vh;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .section-first {
+    height: 50vh;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .section-first {
+    height: 40vh;
+  }
+  
+}

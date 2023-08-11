@@ -1,0 +1,44 @@
+$colorLightBlue: #51a8db;
+$colorDarkBlue: #2b5485;
+$colorLightGreen: #19c79d;
+$colorDarkGreen: #1fa095;
+$colorTeal: #257a8d;
+$colorBasic: rgba(81, 168, 219, 0.2);
+$colorText: #4a4a4a;
+$colorRed: rgb(245, 32, 32);
+
+* {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.home-container {
+  margin: 0 auto !important;
+  padding: 10px 60px 10px 60px !important;
+  max-width: 1500px;
+  // width: 1500px;
+
+  section {
+    width: 100px !important;
+    border: 1px solid;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.Button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.width-100 {
+  width: 100% !important;
+}
+.width-90 {
+  width: 100% !important;
+}
+

@@ -1,0 +1,148 @@
+@import "../../../global/mixins.scss";
+
+.cadre {
+  .head {
+    height: 50px;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-100-color);
+
+    img {
+      width: 25px;
+      margin-right: 4%;
+    }
+
+    h3 {
+      margin-bottom: 0% !important;
+    }
+  }
+
+  .bodys {
+    width: 100% !important;
+    height: 80% !important;
+    padding: 0 0 8px;
+
+    .bodyss {
+      height: 100% !important;
+      width: 100% !important;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    button {
+      background: rgba(247, 58, 58, 0.791) !important;
+      border-radius: 0% !important;
+      height: 2px !important;
+      font-size: 15px !important;
+      width: 2vw !important;
+      color: black !important;
+      margin-left: -2rem !important;
+      margin-top: 1rem;
+      padding: 0% !important;
+
+      &:last-child {
+        margin-right: -2rem !important;
+      }
+
+      svg {
+        color: black !important;
+      }
+
+      img {
+        width: 0% !important;
+      }
+    }
+
+    #slides {
+      width: 100% !important;
+      border: 1px solid red;
+    }
+
+    .img_div {
+      width: 92%;
+      height: 100% !important;
+      padding-bottom: 0% !important;
+      margin: auto;
+      text-align: start;
+
+      #name {
+        font-size: 15px !important;
+        font-weight: lighter;
+        margin-top: 0.5rem;
+        margin-bottom: 0% !important;
+      }
+
+      div {
+        width: 100%;
+        height: 40% !important;
+        border-radius: 3px;
+        background: rgb(228, 228, 228);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4% 0 4%;
+        text-align: start;
+
+        img {
+          width: 90px;
+          height: 90%;
+        }
+      }
+
+      p {
+        font-size: 13px !important;
+        margin-bottom: 0% !important;
+      }
+
+      span {
+        float: right;
+        font-size: 13px !important;
+        font-weight: bold;
+        margin-top: 5px;
+        color: rgb(218, 15, 15);
+        margin-bottom: 0% !important;
+      }
+    }
+  }
+
+  @include tablet {
+    .bodys {
+      .img_div {
+        div {
+          height: 150px !important;
+          img {
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 620px) {
+  .cadre {
+    #head {
+      h3 {
+        margin-bottom: 0% !important;
+        padding-bottom: 0% !important;
+      }
+    }
+
+    &:nth-child(3) {
+      display: none !important;
+    }
+  }
+
+
+  #bodys {
+    .img_div {
+      margin-bottom: 8% !important;
+    }
+  }
+
+  .bodys .img_div div img {
+    width: 40%;
+  }
+}

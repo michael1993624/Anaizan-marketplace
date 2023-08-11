@@ -1,0 +1,212 @@
+@import "../../global/mixins.scss";
+
+.product-list {
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 13px;
+    border-radius: 10px;
+
+    .product {
+        width: 32%;
+        margin-right: 1.2rem;
+        position: relative;
+
+        .prod-img {
+            width: 100%;
+            height: 270px;
+        }
+
+        .favourite-icon {
+            background: none;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+
+            img {
+                width: 35px;
+            }
+        }
+    }
+
+    .info-product {
+        width: 68%;
+
+        h2 {
+            width: 100%;
+            word-break: break-all;
+            font-size: 25px !important;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0 0 10px;
+            font-size: 15px !important;
+
+            span {
+                color: rgb(77, 77, 77);
+                font-weight: 500;
+            }
+
+            &:nth-child(2) {
+                b {
+                    font-size: 17px;
+                    color: var(--red-color);
+                }
+            }
+
+            &:nth-child(3) {
+                span {
+                    &:nth-child(2) {
+                        color: green;
+                        margin-left: 1rem;
+
+                        svg {
+                            font-size: 1rem;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(5) {
+                margin: 15px 0 1.3rem !important;
+
+                span {
+                    width: max-content;
+                    background-color: var(--gray-100-color);
+                    padding: 2px 5px 2px 5px;
+                    border-radius: 5px;
+                    margin: 0 7px 0 0;
+
+                    &:nth-child(1) {
+                        background: none !important;
+                        padding: 0% !important;
+                        font-size: 16px !important
+                    }
+
+                    &:nth-child(2) {
+                        img {
+                            width: 30px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        padding: 0% !important;
+                        background: none !important;
+
+                        img {
+                            width: 70px;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        background: none !important;
+                        color: green;
+                        padding: 0% !important;
+                        margin-left: 10px !important;
+
+                        img {
+                            width: 23px;
+                            margin-right: 6px;
+                        }
+
+                        b {
+                            color: black;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(6) {
+                margin-bottom: 0% !important;
+
+                button {
+                    font-size: 15px;
+                    width: max-content;
+                    height: 30px;
+                    margin: 0 15px 0 0;
+                    padding: 0 1rem 0 1rem;
+                    border-radius: 30px;
+
+                    img {
+                        width: 20px;
+                    }
+
+                    &:nth-child(1) {
+                        background: var(--red-400-color);
+                        color: white;
+                        border: 1px solid var(--red-400-color);
+
+                        &:hover {
+                            background: none;
+                            color: var(--red-400-color);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background: none;
+                        color: var(--red-400-color);
+                        border: 1px solid var(--red-400-color);
+
+                        &:hover {
+                            background: rgba(255, 0, 0, 0.17);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        background: none;
+
+                        &:hover {
+                            background: rgba(255, 0, 0, 0.17);
+                        }
+                    }
+                }
+            }
+        }
+
+        .div-child {
+            margin-bottom: 6px;
+
+            p {
+                margin: 0%;
+            }
+
+            .div-child1 {
+                margin-right: 6rem;
+            }
+        }
+    }
+
+    @include desktop_md {
+        flex-direction: column !important;
+
+        .product {
+            width: 280px;
+            margin-bottom: 1rem;
+        }
+
+        .info-product {
+            width: 80%;
+
+            .div-child {
+                justify-content: space-between !important;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @include tablet {
+        .info-product {
+            width: 100%;
+
+            p {
+                &:nth-child(5) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

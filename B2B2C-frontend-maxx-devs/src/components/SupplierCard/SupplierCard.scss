@@ -1,0 +1,294 @@
+@import "../../global/mixins.scss";
+
+.supplier-div {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom:  12px;
+
+    .div1 {
+        width: 69%;
+        position: relative !important;
+
+        .div1-child1 {
+            .vm-img {
+                width: 20%;
+                height: 110px;
+                margin-right: 10px;
+            }
+
+            .info-entreprise {
+                width: 80%;
+
+                h2 {
+                    font-size: 25px !important;
+                    width: 100%;
+                    margin-bottom: 12px !important;
+                    word-break: break-all;
+                }
+
+                p {
+                    margin: 10px 0 0 0 !important;
+
+                    span {
+                        font-size: 14px !important;
+
+                        img {
+                            width: 18px;
+                            height: max-content;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        span {
+                            height: max-content !important;
+                            width: max-content;
+                            margin: 0 1.2rem 0 0;
+                            border-radius: 5px;
+                            padding: 2px 5px 2px 5px;
+                            background-color: var(--gray-100-color);
+
+                            &:nth-child(1) {
+                                img {
+                                    width: 22px;
+                                    margin-right: 5px;
+                                    height: max-content !important;
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                background-color: none;
+                                padding: 0%;
+
+                                img {
+                                    width: 70px
+                                }
+                            }
+
+                            &:last-child {
+                                margin-left: 1.5rem;
+                                background: none;
+                                padding: 0;
+                                color: green;
+
+                                img {
+                                    width: 25px;
+                                    margin-right: 5px;
+                                }
+
+                                b {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        span {
+                            margin: 0 12px 0 0 !important;
+
+                            &:nth-child(1) {
+                                border-radius: 20px;
+                                background: #ff77002a;
+                                padding: 5px 1rem 5px 1rem;
+
+                                svg {
+                                    color: #FF7700;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                font-size: 15px !important;
+                            }
+
+                            &:nth-child(3) {
+                                margin-left: 2rem !important;
+                                cursor: pointer;
+                                img {
+                                    width: 22px;
+                                    margin-right: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .div1-child2 {
+            margin-top: 10px;
+
+            p {
+                margin: 0 0 0 0 !important;
+                font-size: 14px;
+
+                span {
+                    margin-left: 10px;
+                    font-weight: bold;
+                    font-size: 14px !important;
+                }
+            }
+
+            .div1-child3 {
+                div {
+                    width: 73px;
+                    height: 90px;
+                    background: var(--gray-100-color);
+                    border: 1px solid rgb(186, 186, 186);
+                    overflow: hidden;
+                    border-radius: 5px;
+                    margin: 0 10px 0 0;
+
+                    img {
+                        height: 73%;
+                        width: 90%;
+                        margin: auto;
+                    }
+
+                    h4 {
+                        font-size: 15px !important;
+                        width: 100%;
+                        height: 27%;
+                        background: white;
+                        margin-bottom: 0% !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .div1-child4 {
+            margin-top: 1rem;
+
+            button {
+                width: max-content;
+                height: 32px;
+                margin: 0 10px 0 0;
+                background: none;
+                border-radius: 30px;
+                padding: 0 12px;
+                font-size: 15px;
+
+                img {
+                    width: 20px;
+                    height: max-content;
+                }
+
+                &:nth-child(1) {
+                    background: var(--red-400-color);
+                    color: white;
+                    border: 1px solid var(--red-400-color);
+
+                    &:hover {
+                        background: none;
+                        color: var(--red-400-color);
+                    }
+                }
+
+                &:nth-child(2) {
+                    img {
+                        margin-right: 5px;
+                    }
+
+                    &:hover {
+                        background: #ff77002a;
+                    }
+                }
+
+                &:nth-child(3) {
+                    border: 1px solid var(--red-400-color);
+
+                    &:hover {
+                        background: rgba(255, 0, 0, 0.241);
+                    }
+                }
+            }
+        }
+    }
+
+    .div2-d {
+        width: 28%;
+        padding: 0% !important;
+
+        .top-img {
+            float: right;
+            margin-bottom: 1rem;
+        }
+        .shop {
+            width: 100%;
+            height: 160px;
+        }
+
+        .div2-child1 {
+            width: 100%;
+            display: flex !important;
+            flex-direction: row !important;
+            margin: 1rem 0 0;
+
+            img {
+                width: 14%;
+            }
+        }
+    }
+
+    @include tablet {
+
+        .div1 {
+            width: 100% !important;
+
+            .div1-child1 {
+                width: 100%;
+            }
+
+            .div1-child2 {
+                width: 100%;
+            }
+
+            .div1-child4 {
+                width: 100%;
+            }
+        }
+        .div2-d {
+            display: none;
+        }
+    }
+
+    @include phone {
+        .div1 {
+            .div1-child1 {
+                width: 100%;
+                .vm-img {
+                    display: none !important;
+                }
+
+                .info-entreprise {
+                    width: 100% !important;
+                }
+            }
+
+            .div1-child2 {
+                flex-direction: column !important;
+                width: 100%;
+
+                .ps {
+                    width: 100%;
+                }
+
+                .div1-child3 {
+                    width: 100%;
+                    margin: 1rem 0 1rem;
+                }
+            }
+
+            .div1-child4 {
+                button {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

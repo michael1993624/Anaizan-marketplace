@@ -1,0 +1,22 @@
+@import "../../App.scss";
+.location-input-wrapper {
+  display: flex;
+  border-bottom: solid 1px #979797;
+  padding-top: 14px;
+  // width: 365px;
+  .input-search {
+    border: none;
+    outline: none;
+    background: #fafafa;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    color: $colorText;
+    width: 100%;
+  }
+  @media only screen and (device-width: 1440px) {
+    font-size: 14px;
+  }
+}
+.width-100 {
+  width: 80% !important;
+}
